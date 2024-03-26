@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* .roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .roboto-black-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  } */
+
+
+
+body {
+    /* background-color: #1fdf64; */
+}
+
+.main {
+    height: 100vh;
+    background-color: black;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.container {
+    height: 82vh;
+    /* background-color: #1fdf64; */
+}
+
+.left-side {
+    width: 25vw;
+    /* height: 85vh !important; */
+    /* background-color: #1fdf64; */
+    /* padding: 4px; */
+}
+
+
+.first-part {
+    padding: 15px 20px;
+    /* height: 28vh; */
+}
+
+.first-part ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 15px;
+    line-height: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease-out;
+}
+
+.first-part ul li:hover {
+    color: rgb(205, 204, 204);
+}
+
+.second-part {
+    height: 52vh;
+}
+
+.second-part>div {
+    padding: 15px 20px;
+}
+
+
+.playlist-container {
+    height: 110px;
+    margin: 10px 0px;
+    /* background-color: #3e3e3e; */
+    overflow-y: auto;
+
+}
+
+.create-playlist {
+    background-color: #3e3e3e;
+    padding: 12px;
+
+}
+
+.heading {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 13px;
+}
+
+
+.playlist-btn {
+    background-color: white;
+    padding: 8px 10px;
+    margin: 10px 0px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: rgb(13, 13, 13);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.playlist-btn:hover {
+    transform: scale(1.05);
+}
+
+.podcast-playlist {
+    background-color: #3e3e3e;
+    padding: 12px;
+}
+
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+    color: #989898;
+    column-gap: 28px;
+    line-height: 30px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+/*  */
+
+.right-side {
+    width: 75vw;
+    overflow: hidden;
+    background-color: white;
+    height: 82vh;
+}
+
+
+.header {
+    height: 60px;
+}
+
+.signup-btn {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.signup-btn:hover {
+    color: #989898;
+    transform: scale(1.05);
+}
+
+.login-btn {
+    background-color: white;
+    padding: 16px 25px;
+    margin: 0px 25px;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: rgb(13, 13, 13);
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.login-btn:hover {
+    transform: scale(1.05);
+}
+
+
+.rigth-container {
+    overflow-y: auto;
+}
+
+
+.spotify-heading h2 {
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.spotify-heading h2:hover {
+    text-decoration: underline;
+}
+
+.spotify-heading p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #989898;
+}
+
+.spotify-heading p:hover {
+    text-decoration: underline;
+}
+
+.cardContainer {
+    overflow-y: auto;
+    margin: 20px 10px;
+    height: 60vh;
+    /* flex-direction: row; */
+}
+
+.card {
+    width: 170px;
+    height: 220px;
+    padding: 8px;
+    margin: 15px 2px;
+    border-radius: 3px;
+    position: relative;
+    transition: all 0.2s ease-in;
+    /* border: 2px solid pink; */
+}
+
+.card:hover {
+    background-color: #3e3e3e;
+
+}
+
+.card>img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 3px;
+}
+
+
+.card-title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card-description {
+    color: #989898;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.play {
+    /* width: 33px; */
+    /* height: 33px; */
+    background-color: #1fdf64;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 65px;
+    right: 17px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+
+.card:hover .play {
+    bottom: 78px;
+    opacity: 1;
+
+}
+
+.play-bar {
+    /* margin-top: 33px !important; */
+    /* margin-left: 20px ; */
+    /* margin-left: 20px; */
+    /* margin: 0px 20px; */
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 10px;
+}

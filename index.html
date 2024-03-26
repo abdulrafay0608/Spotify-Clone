@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <title>Spotify - Clone</title>
+</head>
+
+<body>
+
+    <main class="main bg-black">
+        <div class="container flex justify-center gap-2 p-2">
+
+            <div class="left-side">
+
+                <div class="first-part bg-grey rounded">
+                    <div class="my-2">
+                        <img class="invert" src="/icons/logo.svg" alt="logo">
+                    </div>
+                    <ul>
+                        <li><img class="invert icon" src="/icons/home.svg" alt="home"> Home</li>
+                        <li><img class="invert icon" src="/icons/search.svg" alt="search"> Search</li>
+                    </ul>
+                </div>
+
+                <div class="second-part bg-grey rounded ">
+
+                    <div class="flex justify-between items-center my-1">
+                        <div class="flex items-center font-bold">
+                            <img class="invert icon" src="/icons/playlist.svg" alt="playlist">
+                            <span class="mx-2">Your Library</span>
+                        </div>
+                        <div>
+                            <img class="invert small-icon" src="/icons/plus.svg" alt="plus">
+                        </div>
+                    </div>
+
+                    <div class="playlist-container ">
+
+                        <div class="create-playlist rounded">
+                            <div class="heading">Create your first playlist</div>
+                            <p class="title my-1">it's easy, we'll help you</p>
+                            <button class="playlist-btn">Create playlist</button>
+                        </div>
+                        <div class="podcast-playlist rounded my-2">
+                            <div class="heading">Let's find some podcasts to follow</div>
+                            <p class="title my-1">We'll keep you updated on new episodes</p>
+                            <button class="playlist-btn">Browse podcasts</button>
+                        </div>
+                    </div>
+
+
+                    <div class="footer m-2">
+                        <div><a href=""><span>Legal</span></a></div>
+                        <div><a href=""><span>Safety & Privacy Center</span></a></div>
+                        <div><a href=""><span>Privacy Policy</span></a></div>
+                        <div><a href=""><span>Cookies</span></a></div>
+                        <div><a href=""><span>About Ads</span></a></div>
+                        <div><a href=""><span>Accessibility</span></a></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="right-side bg-grey rounded">
+
+
+                <div class="header bg-header flex justify-between items-center px-2">
+                    <div class="flex justify-center items-center gap-2">
+                        <span class="bg-black rounded-full p-1">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#ffffff" fill="none">
+                                <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <span class="bg-black rounded-full p-1">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#ffffff" fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="btn">
+                        <a class="signup-btn">Sign up</a>
+                        <a class="login-btn">Log in</a>
+                    </div>
+
+                </div>
+
+                <div class="rigth-container">
+                    <div class="spotify-heading flex justify-between items-center my-1 px-2">
+                        <h2>Spotify Playlists</h2>
+                        <p>Show all</p>
+                    </div>
+
+                    <div class="cardContainer flex  flex-wrap">
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+                        <div class="card">
+                            <div class="play">
+                                <img src="/icons/play.svg" alt="">
+                            </div>
+                            <img src="https://mosaic.scdn.co/300/ab67616d00001e0209fce107a8c56c0de3ef74b6ab67616d00001e024159b6b3cef9a08426afb65cab67616d00001e028e0f77cfe6eb7962a632e2bcab67616d00001e02e73465616c4207e22a9839c1"
+                                alt="naat">
+                            <h3 class="card-title my-1">Best of naats</h3>
+                            <p class="card-description ">By Irfan.shaikh </p>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <div class=" play-bar bg-header">
+            <img width="28" class="invert" id="previous" src="/icons/previous.svg" alt="">
+            <img width="28" class="invert" id="play" src="/icons/play.svg" alt="">
+            <img width="28" class="invert" id="next" src="/icons/next.svg" alt="">
+        </div>
+    </main>
+
+</body>
+
+</html>
