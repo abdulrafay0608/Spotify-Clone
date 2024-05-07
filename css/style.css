@@ -80,21 +80,19 @@
 
 
 body {
-    /* background-color: #1fdf64; */
+    background-color: #000;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
 }
 
 .main {
-    height: 100vh;
-    background-color: black;
-    scroll-behavior: smooth;
-    font-family: "Roboto", sans-serif;
-    overflow: hidden;
     position: relative;
 
 }
 
 .container {
     height: 85vh;
+    position: relative;
     /* background-color: #1fdf64; */
 }
 
@@ -106,10 +104,16 @@ body {
 }
 
 
+
 .first-part {
     padding: 15px 20px;
     height: 28vh;
 }
+
+.close {
+    display: none;
+}
+
 
 .first-part ul li {
     display: flex;
@@ -127,65 +131,71 @@ body {
 
 .second-part {
     height: 52vh;
+    margin: 8px 0px;
 }
 
 .second-part>div {
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
 
 .playlist-container {
-    height: 110px;
-    margin: 10px 0px;
-    /* background-color: #3e3e3e; */
+    height: 155px;
     overflow-y: auto;
 
 }
 
 .create-playlist {
-    background-color: #3e3e3e;
-    padding: 12px;
+    /* background-color: #3e3e3e; */
+    /* padding: 8px; */
 
 }
 
-.heading {
-    font-size: 16px;
-    font-weight: 700;
+.create-playlist ul li {
+    border: 2px solid #fff;
+    margin: 8px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+    list-style: none;
+    padding: 6px 3px;
+    cursor: pointer;
 }
 
-.title {
-    font-size: 13px;
+.create-playlist ul li .info .song-name {
+    font-size: 14px;
+    color: beige;
+    /* max-width: 130px; */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
 }
 
-
-.playlist-btn {
-    background-color: white;
-    padding: 8px 10px;
-    margin: 10px 0px;
-    border-radius: 25px;
-    border: 1px solid white;
-    color: rgb(13, 13, 13);
-    font-size: 13px;
-    font-weight: bold;
+.create-playlist ul li .info .artist-name {
+    font-size: 12px;
+    color: beige;
 }
 
-.playlist-btn:hover {
-    transform: scale(1.05);
+.create-playlist ul li .playNow {
+    font-size: 12px;
+    color: beige;
+    cursor: pointer;
 }
 
-.podcast-playlist {
-    background-color: #3e3e3e;
-    padding: 12px;
+.create-playlist ul li .play-icon {
+    padding: 3px;
+    cursor: pointer;
 }
-
 
 .footer {
     display: flex;
     flex-wrap: wrap;
     font-size: 11px;
     color: #989898;
-    column-gap: 28px;
-    line-height: 30px;
+    column-gap: 10px;
+    line-height: 25px;
 }
 
 .footer a {
@@ -195,16 +205,26 @@ body {
 
 /*  */
 
+
+
 .right-side {
     width: 75vw;
     overflow: hidden;
     background-color: white;
-    height: 85vh;
+    height: 86vh;
 }
 
 
 .header {
     height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.humburger {
+    display: none;
+
 }
 
 .signup-btn {
@@ -223,8 +243,8 @@ body {
 
 .login-btn {
     background-color: white;
-    padding: 16px 25px;
-    margin: 0px 25px;
+    padding: 12px 16px;
+    margin: 0px 20px;
     border-radius: 25px;
     border: 1px solid white;
     color: rgb(13, 13, 13);
@@ -330,13 +350,102 @@ body {
 
 }
 
-.play-bar {
+.play-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
     height: 50px;
+    border-radius: 4px;
+    padding: 6px;
+    margin: 4px 10px;
+}
+
+.play-bar {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    border-radius: 4px;
-    padding: 6px;
-    margin: 5px 10px;
+
+}
+
+
+.seekbar {
+    background-color: #747474;
+    height: 2px;
+    width: 98%;
+    border: 1px solid #747474;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 8px;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+.play-circle {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.music-name {
+    position: absolute;
+    bottom: 12px;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.music-duration {
+    position: absolute;
+    bottom: 12px;
+    right: 0px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 920px) {
+    .left-side {
+        background: #000;
+        position: absolute;
+        left: -100%;
+        width: 95vw;
+        transition: all .3s;
+        z-index: 99;
+    }
+
+    .right-side {
+        width: 100vw;
+        overflow: hidden;
+        background-color: white;
+        height: 86vh;
+        /* display: none; */
+    }
+
+    .header {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .humburger {
+        display: block;
+        border: 1px solid #fff;
+        padding: 4px 6px;
+    }
+    .close {
+        border: 1px solid #000;
+        padding: 5px;
+    }
+
+    .footer {
+        display: none;
+    }
+
+
 }
